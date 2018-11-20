@@ -1,0 +1,5 @@
+com\lxy\javabasedemo\demo\rabbitmq\receiver\MQReceiver.class
+com\lxy\javabasedemo\demo\rabbitmq\sender\MQSender.class
+com\lxy\javabasedemo\demo\rabbitmq\conf\RabbitMqConfig.class
+com\lxy\javabasedemo\Test.class
+com\lxy\javabasedemo\demo\rabbitmq\constans\TopicConstants.class
