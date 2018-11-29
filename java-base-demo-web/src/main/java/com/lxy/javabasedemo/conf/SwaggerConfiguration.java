@@ -12,7 +12,6 @@ import static com.google.common.collect.Lists.newArrayList;
 
 
 @Configuration
-@EnableSwagger2
 public class SwaggerConfiguration {
 
     @Bean

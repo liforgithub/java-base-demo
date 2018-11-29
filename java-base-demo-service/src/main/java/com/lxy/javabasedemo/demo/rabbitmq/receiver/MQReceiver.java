@@ -11,7 +11,7 @@ public class MQReceiver {
 
     @RabbitHandler
     public void receiver(String msg) {
-        System.out.println(TopicConstants.RABBIT_TEST_TOPIC + " receiver1:" + msg);
+        System.out.println(TopicConstants.RABBIT_TEST_TOPIC + " 成功接收到消息:" + msg);
     }
 
 }

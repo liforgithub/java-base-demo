@@ -12,10 +12,10 @@ public class MQSender {
     private RabbitTemplate rabbitTemplate;
 
     //发送消息，不需要实现任何接口，供外部调用。
-    public void send(String msg) {
+    public void send(String msg, String typeName) {
 
         System.out.println("开始发送消息 : " + msg.toLowerCase());
-        rabbitTemplate.convertAndSend(TopicConstants.RABBIT_TEST_TOPIC, msg);
+        rabbitTemplate.convertAndSend("rabbit", typeName, msg);
         System.out.println("消息发送完成");
     }
 }

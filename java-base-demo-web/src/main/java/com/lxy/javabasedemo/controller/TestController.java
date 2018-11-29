@@ -1,6 +1,7 @@
 package com.lxy.javabasedemo.controller;
 
 import com.lxy.javabasedemo.base.ResponseEntity;
+import com.lxy.javabasedemo.demo.rabbitmq.constans.TopicConstants;
 import com.lxy.javabasedemo.demo.rabbitmq.sender.MQSender;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class TestController extends BaseController {
     public ResponseEntity testRabbitMQ(String sendStr) throws Exception {
 
         System.out.println("测试开始");
-        mqSender.send(sendStr);
+        mqSender.send(sendStr, "rabbit.test2");
         return this.getSuccessResult(sendStr + "发送成功");
     }
 }
